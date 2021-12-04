@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="4" failures="0" name="com.zking.shiro.service.impl.UserServiceImplTest" time="0.63" errors="4" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="F:\InstalPath\Java\jdk1.8.0_73\jre\bin"/>
+    <property name="java.vm.version" value="25.73-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\Redis\shiro02"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\Redis\shiro02"/>
+    <property name="java.runtime.version" value="1.8.0_73-b02"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="F:\InstalPath\Java\jdk1.8.0_73\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\T440s\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="E:\soft\Idea\IntelliJ IDEA 2020.1.1\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="E:\soft\apache-maven-3.5.4\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="F:\InstalPath\Java\jdk1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\VMware\bin\;E:\soft\node-v10.15.3-win-x64;E:\soft\node-v10.15.3-win-x64\node_global;F:\InstalPath\Java\jdk1.8.0_73\bin;E:\soft\mysql-5.7.23-winx64\bin;E:\soft\apache-maven-3.5.4\bin;E:\soft\apache-maven-3.5.4\bin;&quot;C:\ProgramData\Oracle\Java\javapath;E:\app2\T440s\product\11.2.0\dbhome_2\bin;E:\app\T440s\product\11.2.0\dbhome_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\新建文件夹\QTSystem\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;&quot;;E:\soft\Svn\bin;E:\soft\Xshell\;E:\python\Scripts\;E:\python\;C:\Users\T440s\AppData\Local\Microsoft\WindowsApps;;E:\PyCharm\PyCharm 2021.1.3\bin;;E:\soft\Idea\IntelliJ IDEA 2020.1.1\bin;;."/>
+    <property name="maven.conf" value="E:\soft\apache-maven-3.5.4/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\T440s"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="T440s"/>
+    <property name="java.class.path" value="E:\soft\apache-maven-3.5.4\boot\plexus-classworlds-2.5.2.jar;E:\soft\Idea\IntelliJ IDEA 2020.1.1\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="F:\InstalPath\Java\jdk1.8.0_73\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2020.1.1 -s E:\soft\apache-maven-3.5.4\conf\settings.xml install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="idea.version2020.1.1" value="true"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_73"/>
+    <property name="java.ext.dirs" value="F:\InstalPath\Java\jdk1.8.0_73\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="F:\InstalPath\Java\jdk1.8.0_73\jre\lib\resources.jar;F:\InstalPath\Java\jdk1.8.0_73\jre\lib\rt.jar;F:\InstalPath\Java\jdk1.8.0_73\jre\lib\sunrsasign.jar;F:\InstalPath\Java\jdk1.8.0_73\jre\lib\jsse.jar;F:\InstalPath\Java\jdk1.8.0_73\jre\lib\jce.jar;F:\InstalPath\Java\jdk1.8.0_73\jre\lib\charsets.jar;F:\InstalPath\Java\jdk1.8.0_73\jre\lib\jfr.jar;F:\InstalPath\Java\jdk1.8.0_73\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="E:\soft\apache-maven-3.5.4"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.zking.shiro.service.impl.UserServiceImplTest" name="insert" time="0.612">
+    <error message="Could not find result map java.lang.String" type="org.apache.ibatis.builder.IncompleteElementException">org.apache.ibatis.builder.IncompleteElementException: Could not find result map java.lang.String
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109)
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:788)
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:758)
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:753)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.resolveMappedStatement(MapperMethod.java:247)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.&lt;init&gt;(MapperMethod.java:217)
+	at org.apache.ibatis.binding.MapperMethod.&lt;init&gt;(MapperMethod.java:48)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy40.insert(Unknown Source)
+	at com.zking.shiro.service.impl.UserServiceImpl.insert(UserServiceImpl.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:338)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy42.insert(Unknown Source)
+	at com.zking.shiro.service.impl.UserServiceImplTest.insert(UserServiceImplTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for java.lang.String
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:640)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344)
+	... 63 more
+</error>
+    <system-out>2021-11-27 15:45:06.285 [main-135] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using &apos;class org.apache.ibatis.logging.slf4j.Slf4jImpl&apos; adapter.
+2021-11-27 15:45:06.476 [main-109] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+2021-11-27 15:45:06.476 [main-142] DEBUG org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+2021-11-27 15:45:06.478 [main-109] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+2021-11-27 15:45:06.479 [main-70] DEBUG org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2021-11-27 15:45:06.481 [main-84] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2021-11-27 15:45:06.482 [main-222] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/Redis/shiro02/target/classes/com/zking/shiro/model
+2021-11-27 15:45:06.483 [main-248] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/Redis/shiro02/target/classes/com/zking/shiro/model
+2021-11-27 15:45:06.580 [main-102] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Permission.class
+2021-11-27 15:45:06.586 [main-102] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Role.class
+2021-11-27 15:45:06.588 [main-102] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: User.class
+2021-11-27 15:45:06.589 [main-113] DEBUG org.apache.ibatis.io.DefaultVFS - Listing file:/E:/Redis/shiro02/target/classes/com/zking/shiro/model
+2021-11-27 15:45:06.590 [main-222] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/Redis/shiro02/target/classes/com/zking/shiro/model/Permission.class
+2021-11-27 15:45:06.591 [main-248] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/Redis/shiro02/target/classes/com/zking/shiro/model/Permission.class
+2021-11-27 15:45:06.598 [main-102] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;3&amp;#0;l
+2021-11-27 15:45:06.600 [main-222] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/Redis/shiro02/target/classes/com/zking/shiro/model/Role.class
+2021-11-27 15:45:06.601 [main-248] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/Redis/shiro02/target/classes/com/zking/shiro/model/Role.class
+2021-11-27 15:45:06.604 [main-102] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;3&amp;#0;`
+2021-11-27 15:45:06.605 [main-222] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/Redis/shiro02/target/classes/com/zking/shiro/model/User.class
+2021-11-27 15:45:06.605 [main-248] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/Redis/shiro02/target/classes/com/zking/shiro/model/User.class
+2021-11-27 15:45:06.617 [main-102] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;3&amp;#0;{
+2021-11-27 15:45:06.618 [main-256] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.zking.shiro.model.Permission matches criteria [is assignable to Object]
+2021-11-27 15:45:06.622 [main-256] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.zking.shiro.model.Role matches criteria [is assignable to Object]
+2021-11-27 15:45:06.624 [main-256] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.zking.shiro.model.User matches criteria [is assignable to Object]
+2021-11-27 15:45:06.695 [main-135] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using &apos;class org.apache.ibatis.logging.slf4j.Slf4jImpl&apos; adapter.
+2021-11-27 15:45:06.951 [main-86] DEBUG org.apache.shiro.spring.LifecycleBeanPostProcessor - Initializing bean [shiroRealm]...
+2021-11-27 15:45:06.952 [main-234] DEBUG org.apache.shiro.realm.AuthorizingRealm - No authorizationCache instance set.  Checking for a cacheManager...
+2021-11-27 15:45:06.952 [main-248] INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2021-11-27 15:45:06.981 [main-545] TRACE org.apache.shiro.config.Ini - Discovered key/value pair: /user/login=anon
+2021-11-27 15:45:06.985 [main-545] TRACE org.apache.shiro.config.Ini - Discovered key/value pair: /book/**=authc
+2021-11-27 15:45:06.986 [main-545] TRACE org.apache.shiro.config.Ini - Discovered key/value pair: /common/**=authc
+2021-11-27 15:45:06.987 [main-160] TRACE org.apache.shiro.config.Ini - Specified name was null or empty.  Defaulting to the default section (name = &quot;&quot;)
+2021-11-27 15:45:07.001 [main-506] TRACE org.apache.shiro.spring.web.ShiroFilterFactoryBean - Ignoring non-Filter bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos;
+2021-11-27 15:45:07.005 [main-506] TRACE org.apache.shiro.spring.web.ShiroFilterFactoryBean - Ignoring non-Filter bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+2021-11-27 15:45:07.024 [main-506] TRACE org.apache.shiro.spring.web.ShiroFilterFactoryBean - Ignoring non-Filter bean &apos;transactionManager&apos;
+2021-11-27 15:45:07.027 [main-506] TRACE org.apache.shiro.spring.web.ShiroFilterFactoryBean - Ignoring non-Filter bean &apos;org.springframework.transaction.config.internalTransactionalEventListenerFactory&apos;
+2021-11-27 15:45:07.029 [main-506] TRACE org.apache.shiro.spring.web.ShiroFilterFactoryBean - Ignoring non-Filter bean &apos;permissionMapper&apos;
+2021-11-27 15:45:07.065 [main-506] TRACE org.apache.shiro.spring.web.ShiroFilterFactoryBean - Ignoring non-Filter bean &apos;roleMapper&apos;
+2021-11-27 15:45:07.202 [main-506] TRACE org.apache.shiro.spring.web.ShiroFilterFactoryBean - Ignoring non-Filter bean &apos;com.zking.shiro.service.impl.UserServiceImplTest&apos;
+</system-out>
+    <system-err>Sat Nov 27 15:45:07 CST 2021 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sat Nov 27 15:45:07 CST 2021 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sat Nov 27 15:45:07 CST 2021 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sat Nov 27 15:45:07 CST 2021 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sat Nov 27 15:45:07 CST 2021 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sat Nov 27 15:45:07 CST 2021 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sat Nov 27 15:45:07 CST 2021 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sat Nov 27 15:45:07 CST 2021 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sat Nov 27 15:45:07 CST 2021 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sat Nov 27 15:45:07 CST 2021 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sat Nov 27 15:45:07 CST 2021 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+</system-err>
+  </testcase>
+  <testcase classname="com.zking.shiro.service.impl.UserServiceImplTest" name="findPre" time="0.005">
+    <error message="Could not find result map java.lang.String" type="org.apache.ibatis.builder.IncompleteElementException">org.apache.ibatis.builder.IncompleteElementException: Could not find result map java.lang.String
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109)
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:788)
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:758)
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:753)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.resolveMappedStatement(MapperMethod.java:247)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.&lt;init&gt;(MapperMethod.java:217)
+	at org.apache.ibatis.binding.MapperMethod.&lt;init&gt;(MapperMethod.java:48)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy40.login(Unknown Source)
+	at com.zking.shiro.service.impl.UserServiceImpl.login(UserServiceImpl.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:338)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy42.login(Unknown Source)
+	at com.zking.shiro.service.impl.UserServiceImplTest.findPre(UserServiceImplTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for java.lang.String
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:640)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344)
+	... 63 more
+</error>
+    <system-out>2021-11-27 15:45:07.817 [main-506] TRACE org.apache.shiro.spring.web.ShiroFilterFactoryBean - Ignoring non-Filter bean &apos;com.zking.shiro.service.impl.UserServiceImplTest&apos;
+</system-out>
+  </testcase>
+  <testcase classname="com.zking.shiro.service.impl.UserServiceImplTest" name="login" time="0.007">
+    <error message="Could not find result map java.lang.String" type="org.apache.ibatis.builder.IncompleteElementException">org.apache.ibatis.builder.IncompleteElementException: Could not find result map java.lang.String
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109)
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:788)
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:758)
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:753)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.resolveMappedStatement(MapperMethod.java:247)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.&lt;init&gt;(MapperMethod.java:217)
+	at org.apache.ibatis.binding.MapperMethod.&lt;init&gt;(MapperMethod.java:48)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy40.login(Unknown Source)
+	at com.zking.shiro.service.impl.UserServiceImpl.login(UserServiceImpl.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:338)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy42.login(Unknown Source)
+	at com.zking.shiro.service.impl.UserServiceImplTest.login(UserServiceImplTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for java.lang.String
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:640)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344)
+	... 63 more
+</error>
+    <system-out>2021-11-27 15:45:07.824 [main-506] TRACE org.apache.shiro.spring.web.ShiroFilterFactoryBean - Ignoring non-Filter bean &apos;com.zking.shiro.service.impl.UserServiceImplTest&apos;
+</system-out>
+  </testcase>
+  <testcase classname="com.zking.shiro.service.impl.UserServiceImplTest" name="findRoles" time="0.006">
+    <error message="Could not find result map java.lang.String" type="org.apache.ibatis.builder.IncompleteElementException">org.apache.ibatis.builder.IncompleteElementException: Could not find result map java.lang.String
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109)
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:788)
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:758)
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:753)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.resolveMappedStatement(MapperMethod.java:247)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.&lt;init&gt;(MapperMethod.java:217)
+	at org.apache.ibatis.binding.MapperMethod.&lt;init&gt;(MapperMethod.java:48)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy40.findRoles(Unknown Source)
+	at com.zking.shiro.service.impl.UserServiceImpl.findRoles(UserServiceImpl.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:338)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy42.findRoles(Unknown Source)
+	at com.zking.shiro.service.impl.UserServiceImplTest.findRoles(UserServiceImplTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for java.lang.String
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:640)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344)
+	... 63 more
+</error>
+    <system-out>2021-11-27 15:45:07.831 [main-506] TRACE org.apache.shiro.spring.web.ShiroFilterFactoryBean - Ignoring non-Filter bean &apos;com.zking.shiro.service.impl.UserServiceImplTest&apos;
+</system-out>
+  </testcase>
+</testsuite>
